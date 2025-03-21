@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object Example</title>
+</head>
+<body>
+
+    <h2>Date Object Example</h2>
+    <button onclick="manipulateDate()">Click to See Date Operations</button>
+    <p id="output"></p>
+
+    <script>
+        function manipulateDate() {
+            let date = new Date(); // Create a Date object
+            let seconds = date.getSeconds(); // Get seconds
+            date.setFullYear(2025); // Set the year to 2025
+            date.setDate(15); // Set the date to 15th
+
+            document.getElementById("output").innerHTML = 
+                "Current Date: " + date + "<br>" +
+                "Seconds: " + seconds + "<br>" +
+                "Updated Year: " + date.getFullYear() + "<br>" +
+                "Updated Date: " + date.getDate();
+        }
+    </script>
+
+</body>
+</html>

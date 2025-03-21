@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Course Object Example</title>
+</head>
+<body>
+  <script>
+    // 1. Create an object named "course" using the new operator
+    const course = new Object();
+
+    // 2. Populate it with some data
+    course.title = "JavaScript Fundamentals";
+    course.instructor = "Jane Doe";
+    course.duration = "4 weeks";
+
+    // Display the contents of the object before deletion
+    console.log("Before delete:", course);
+
+    // 3. Perform the delete operation on one of its properties
+    delete course.instructor;
+
+    // 4. Display the contents of the object after deletion
+    console.log("After delete:", course);
+
+    // If you'd like to see each property in a loop, you can do:
+    for (const key in course) {
+      console.log(key + ": " + course[key]);
+    }
+  </script>
+</body>
+</html>

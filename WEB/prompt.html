@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt and Confirm</title>
+</head>
+<body>
+
+    <button onclick="getUserInput()">Click Me</button>
+
+    <script>
+        function getUserInput() {
+            let userInput = prompt("Enter your choice:");
+            if (userInput !== null && userInput !== "") {
+                let confirmation = confirm("You entered: " + userInput + "\nDo you confirm?");
+                if (confirmation) {
+                    alert("You confirmed: " + userInput);
+                } else {
+                    alert("You canceled.");
+                }
+            } else {
+                alert("No input provided.");
+            }
+        }
+    </script>
+
+</body>
+</html>

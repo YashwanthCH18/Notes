@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Arrays Example</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const arr = ["yash", "1", "kai"];
+        console.log("Initial array:", arr); // Output: ["yash", "1", "kai"]
+
+        arr.push("gay");
+        console.log("Array after push:", arr); // Output: ["yash", "1", "kai", "gay"]
+
+        arr.pop();
+        console.log("Array after pop:", arr); // Output: ["yash", "1", "kai"]
+        
+        arr.unshift(1)
+        console.log("Array after unshift:", arr)
+        
+        const sent=arr.join() 
+        console.log("Array after join is called", sent)
+
+        const anojoin = arr.join(" ")
+        console.log("Array after join is called with space is called", anojoin)
+
+        const str1=["i","am","king"]
+        console.log("String 1:", str1.join())
+
+        const ad=arr.splice(1,1,"replaced 1","can i add this")
+        console.log("Array after splice:", arr)
+
+        console.log("Array after slice:",arr.slice(1,3));
+        
+        const rmshift =arr.shift()
+        console.log("Array after shift:", rmshift)
+    </script>
+</body>
+</html>
