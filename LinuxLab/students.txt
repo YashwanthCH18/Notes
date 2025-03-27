@@ -1,0 +1,6 @@
+John   MCA  2001
+Raj    BCA  2003
+Sita   MCA  2002
+Ramesh MCA  2000
+Simran MCA  2004
+Soham  BBA  2002

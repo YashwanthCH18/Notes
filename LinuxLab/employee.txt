@@ -1,0 +1,6 @@
+Emp_id|Emp_name|Designation|Department|DOB(dd-mm-yyyy)|Salary
+101|John Doe|Manager|Sales|15-05-1975|120000
+102|Jane Smith|Executive|Administration|10-12-1980|90000
+103|Bob Johnson|Clerk|Finance|20-07-1985|50000
+104|Alice Williams|Manager|Administration|05-03-1990|130000
+105|David Brown|Assistant|Sales|25-11-2002|40000
