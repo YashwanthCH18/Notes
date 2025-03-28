@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Object Literal Demo</title>
+</head>
+<body>
+  <h1>JSON Object Literal Demo</h1>
+  <p>Check the browser console for output.</p>
+
+  <script>
+    // JSON string representing an object
+    const jsonObjectString = '{"firstName": "John", "lastName": "Doe", "age": 30, "city": "New York"}';
+    console.log("JSON Object String:", jsonObjectString);
+
+    // Convert the JSON string to a JavaScript object
+    const jsonObject = JSON.parse(jsonObjectString);
+    console.log("Parsed Object:", jsonObject);
+
+    // Use a for...in loop to iterate over the object's properties
+    for (let key in jsonObject) {
+      console.log(key + ": " + jsonObject[key]);
+    }
+  </script>
+</body>
+</html>
