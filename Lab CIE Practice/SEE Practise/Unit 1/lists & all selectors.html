@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* Universal Selector */
+    * {
+      background-color: black;
+      color: white;
+    }
+
+    /* Type Selector */
+    h1 {
+      background-color: grey;
+      font-family: "Times New Roman";
+      text-align: center;
+    }
+
+    /* ID Selector */
+    #myid {
+      background-color: blue;
+      font-size: 125%;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center; 
+      border-radius: 5px;
+    }
+
+    /* Compound Selector (Type + Class) ACCORDING TO MAM THIS IS CLASS SELECTOR*/
+    ul.mylist {
+      list-style: square;
+      padding: 8px;
+      border: 1px solid rgb(230, 10, 10);
+      width: 50%;
+      margin: auto;
+    }
+
+    /* Use same style on ol and dl by assigning .mylist class */
+    ol.mylist,
+    dl.mylist {
+      padding: 8px;
+      border: 1px solid rgb(230, 10, 10);
+      width: 50%;
+      margin: auto;
+    }
+
+    /* Descendant Selector */
+    .highlight-box span {
+      color: yellow;
+      font-weight: bold;
+      font-size: 120%;
+    }
+
+    /* ACCORDING TO MAM THIS IS GENERIC SELECTOR  */
+    .highlight-box {
+      background-color: darkslategray;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      text-align: center;
+      width: 60%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Type Selector -->
+  <h1>Welcome to My Web Page</h1>
+
+  <!-- ID Selector -->
+  <div id="myid">This is a special section using an ID selector.</div>
+
+  <!-- Unordered List -->
+  <ul class="mylist">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <!-- Ordered List -->
+  <ol class="mylist">
+    <li>Learn HTML</li>
+    <li>Style with CSS</li>
+    <li>Code in JS</li>
+  </ol>
+
+  <!-- Description List -->
+  <dl class="mylist">
+    <dt>Frontend</dt>
+    <dd>Handles user interface and user experience</dd>
+    <dt>Backend</dt>
+    <dd>Manages data, logic, and server-side processes</dd>
+  </dl>
+
+  <!-- Descendant selector demo -->
+  <div class="highlight-box">
+    Pro Tip: <span>Practice makes progress!</span>
+  </div>
+
+</body>
+</html>
+

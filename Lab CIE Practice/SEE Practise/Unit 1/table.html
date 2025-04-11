@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preferred Program Table</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+        }
+
+        th {
+            background-color: #444; /* Dark header */
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ddd; /* Slightly darker gray */
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th rowspan="2">Gender</th>
+            <th colspan="4">Preferred Program</th>
+        </tr>
+        <tr>
+            <th>Dance</th>
+            <th>Sports</th>
+            <th>Movies</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Women</td>
+            <td>16</td>
+            <td>6</td>
+            <td>8</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Men</td>
+            <td>2</td>
+            <td>10</td>
+            <td>8</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>18</td>
+            <td>16</td>
+            <td>16</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+</body>
+</html>

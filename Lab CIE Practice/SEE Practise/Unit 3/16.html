@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Methods Demo</title>
+</head>
+<body>
+  <h1>Array Methods Demo</h1>
+  <p>Open the browser console to see the output.</p>
+
+  <script>
+    // Initial array
+    let numbers = [10, 20, 30, 40, 50];
+    console.log("Original: " + numbers);
+
+    // 1. push() - Adds 60 to the end of the array
+    numbers.push(60);
+    console.log("push: " + numbers);
+
+    // 2. pop() - Removes the last element (60) from the array
+    numbers.pop();
+    console.log("pop: " + numbers);
+
+    // 3. splice() - Removes one element at index 2 (removes 30)
+    numbers.splice(2, 1);
+    console.log("splice: " + numbers);
+
+    // 4. shift() - Removes the first element (10) from the array
+    numbers.shift();
+    console.log("shift: " + numbers);
+
+    // 5. unshift() - Adds 5 and 15 to the beginning of the array
+    numbers.unshift(5, 15);
+    console.log("unshift: " + numbers);
+  </script>
+</body>
+</html>

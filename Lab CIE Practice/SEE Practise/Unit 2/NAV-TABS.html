@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tabs Example</title>
+    <!-- Bootstrap CSS (via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+    <h2 class="text-center">Responsive Tabs with Contextual Colors</h2>
+
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item">
+            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">Home</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button">About</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button">Services</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="portfolio-tab" data-bs-toggle="tab" data-bs-target="#portfolio" type="button">Portfolio</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button">Contact</button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-3" id="myTabContent">
+        <div class="tab-pane fade show active bg-primary text-white p-3" id="home">
+            <h4>Home</h4>
+            <p>Welcome to our homepage! Here you will find the latest updates.</p>
+        </div>
+        <div class="tab-pane fade bg-success text-white p-3" id="about">
+            <h4>About Us</h4>
+            <p>Learn more about our mission and values.</p>
+        </div>
+        <div class="tab-pane fade bg-warning text-dark p-3" id="services">
+            <h4>Our Services</h4>
+            <p>We offer a variety of services to meet your needs.</p>
+        </div>
+        <div class="tab-pane fade bg-danger text-white p-3" id="portfolio">
+            <h4>Our Portfolio</h4>
+            <p>Check out our previous projects and achievements.</p>
+        </div>
+        <div class="tab-pane fade bg-info text-dark p-3" id="contact">
+            <h4>Contact Us</h4>
+            <p>Get in touch with us for more information.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JavaScript (via CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* styles.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+  }
+  
+  th {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .morning { background: #a8dadc; }
+  .evening { background: #ffafcc; }
+  .break { 
+    background: #f0f0f0;
+    font-weight: bold;
+  }
