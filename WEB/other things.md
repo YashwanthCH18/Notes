@@ -64,68 +64,125 @@ The `Date` object in JavaScript allows you to work with dates and times. Below a
 
 ---
 
-## 2. Five Methods/Functions Related to the `Number` Object
-
-In JavaScript, there are **instance methods** (used on number variables) and **static methods** (called on the `Number` class). Here are five commonly used ones:
-
-1. **`toFixed(digits)`**
-   
-   - Formats a number to a fixed number of decimal places.
-   
-   ```js
-   let num = 3.14159;
-   console.log(num.toFixed(2)); 
-   // "3.14"
-   ```
-
-2. **`toPrecision(digits)`**
-   
-   - Formats a number to a specified length (total digits).
-   
-   ```js
-   let num = 3.14159;
-   console.log(num.toPrecision(3)); 
-   // "3.14"
-   ```
-
-3. **`toExponential(digits)`**
-   
-   - Returns a string representing the number in exponential notation.
-   
-   ```js
-   let num = 314.159;
-   console.log(num.toExponential(2)); 
-   // "3.14e+2"
-   ```
-
-4. **`Number.isNaN(value)`**
-   
-   - Checks if a value is `NaN` (Not-a-Number).
-   
-   ```js
-   console.log(Number.isNaN(NaN));       
-   // true
-   console.log(Number.isNaN("Hello"));  
-   // false (because "Hello" is not converted to NaN directly)
-   console.log(isNaN("Hello"));         
-   // true (the global isNaN is more lenient)
-   ```
-
-5. **`Number.isInteger(value)`**
-   
-   - Checks if a value is an integer.
-   
-   ```js
-   console.log(Number.isInteger(10));   
-   // true
-   console.log(Number.isInteger(10.5)); 
-   // false
-   ```
-
-> **Note**: `Number.parseInt()` and `Number.parseFloat()` are also commonly used, but they’re essentially the same as the global `parseInt()` and `parseFloat()`.
+Aha! You caught me slacking 😅—that was a *soft launch* of the number methods. Alright, let's go full turbo mode now and give you **5 methods for Numbers** and **5 for Window**, super exam-cram ready.
 
 ---
 
+## 🧠 JavaScript Number Methods (5 you gotta know)
+
+### 1. `toFixed(n)`
+Rounds number to *n* decimal places.  
+🧠 *Great for formatting prices or scores.*
+
+```js
+let price = 9.876;
+price.toFixed(2); // "9.88"
+```
+
+---
+
+### 2. `parseInt()`
+Parses string and returns an **integer**.  
+🧠 *Strips off letters and decimals.*
+
+```js
+parseInt("123abc"); // 123
+```
+
+---
+
+### 3. `parseFloat()`
+Parses string and returns a **float**.  
+🧠 *Keeps the decimal part.*
+
+```js
+parseFloat("123.45px"); // 123.45
+```
+
+---
+
+### 4. `isNaN()`
+Checks if a value is *Not a Number*.  
+🧠 *Useful in input validation.*
+
+```js
+isNaN("hello"); // true
+```
+
+---
+
+### 5. `Number()`
+Converts stuff into an actual number.  
+🧠 *Your go-to type converter.*
+
+```js
+Number("123"); // 123
+Number("hello"); // NaN
+```
+
+---
+
+## 🪟 JavaScript `window` Methods (5 essentials)
+
+### 1. `alert()`
+Displays a popup message.  
+🧠 *Used to say "LOOK AT THIS!" to users.*
+
+```js
+alert("Hello, you got this exam!");
+```
+
+---
+
+### 2. `prompt()`
+Asks the user to input something.  
+🧠 *Instant input box.*
+
+```js
+let name = prompt("What's your name?");
+```
+
+---
+
+### 3. `confirm()`
+Shows a yes/no dialog, returns `true` or `false`.  
+🧠 *Great for confirmations like "Are you sure?"*
+
+```js
+confirm("Wanna delete everything?");
+```
+
+---
+
+### 4. `setTimeout()`
+Runs code **after a delay**.  
+🧠 *One-time timer.*
+
+```js
+setTimeout(() => {
+  console.log("2 seconds later...");
+}, 2000);
+```
+
+---
+
+### 5. `setInterval()`
+Runs code **repeatedly** at intervals.  
+🧠 *It's like a loop with chill vibes.*
+
+```js
+setInterval(() => {
+  console.log("Tick tock...");
+}, 1000);
+```
+
+---
+
+### 🧠 Quick Memory Tip:
+- **Number squad**: `toFixed`, `parseInt`, `parseFloat`, `isNaN`, `Number`
+- **Window gang**: `alert`, `prompt`, `confirm`, `setTimeout`, `setInterval`
+
+Wanna play a quick flashcard or match-the-use game with these to lock 'em in? 👀
 ## 3. Form Validation in JavaScript with Functions and Error Handling
 
 Below is a simple HTML form example demonstrating:

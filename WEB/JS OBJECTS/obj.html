@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Objects Demo</title>
+</head>
+<body>
+  <script>
+    // Object literal (shorthand) method
+    const yashwanth = {
+      name: "kaiser",
+      age: 21,
+      king() {
+        console.log(`${this.name} is the king of the world`);
+      }
+    };
+
+    yashwanth.king();
+
+    // Longhand method using the Object constructor
+    const long = new Object();
+    long.name = "long form";
+    long.reason = "verbose";
+    long.when = function() {
+      console.log(`${this.name} is the ${this.reason} of the code`);
+    };
+
+    long.when();
+  </script>
+</body>
+</html>

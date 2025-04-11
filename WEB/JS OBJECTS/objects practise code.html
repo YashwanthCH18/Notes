@@ -1,0 +1,22 @@
+// Object literal (shorthand) method
+const yashwanth = {
+  name: "kaiser",
+  age: 21,
+  king() {
+    // Use backticks (`) for template literals to interpolate variables
+    console.log(`${this.name} is the king of the world`);
+  }
+};
+
+yashwanth.king();
+
+// Longhand method using the Object constructor
+const long = new Object();
+long.name = "long form";
+long.reason = "verbose";
+long.when = function() {
+  // Again, use backticks for proper interpolation
+  console.log(`${this.name} is the ${this.reason} of the code`);
+};
+
+long.when();
